@@ -1,2 +1,2 @@
 # SharpGPOAbuse
-Precompiled executable
+Precompiled executable within root folder
