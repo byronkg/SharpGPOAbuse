@@ -1,0 +1,2 @@
+# SharpGPOAbuse
+Precompiled executable
